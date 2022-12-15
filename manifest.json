@@ -1,0 +1,11 @@
+{
+  "name": "how much longer????",
+  "version": "1.0.0",
+  "description": "the number of days left till holiday break",
+  "manifest_version": 3,
+  "author": "Taylor Zhang - Lillian Wimberly",
+  "action":{
+      "default_popup": "index.html",
+      "default_title": "how much longer???"
+  }
+}
