@@ -6,27 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Almost to holiday break!</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/063abf5327.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M348.8 131.5c3.7-2.3 7.9-3.5 12.2-3.5c12.7 0 23 10.3 23 23v5.6c0 9.9-5.1 19.1-13.5 24.3L30.1 393.7C.1 412.5-9 451.9 9.7 481.9s58.2 39.1 88.2 20.4L438.4 289.5c45.8-28.6 73.6-78.8 73.6-132.8V151C512 67.6 444.4 0 361 0c-28.3 0-56 8-80.1 23L254.1 39.7c-30 18.7-39.1 58.2-20.4 88.2s58.2 39.1 88.2 20.4l26.8-16.8zM298.4 49.8c9.2-5.7 19.1-10.1 29.4-13.1L348 97.5c-5.7 1.4-11.2 3.7-16.3 6.8l-12.6 7.9L298.4 49.8zm88.5 52.7l46.2-46.2c8.5 6.5 16.1 14.1 22.6 22.6l-46.2 46.2c-5.1-9.6-13-17.5-22.6-22.6zm28.9 59.3l61.6 20.5c-2.2 10.5-5.8 20.7-10.5 30.2l-62-20.7c6.2-8.8 10.1-19.1 11-30.1zm-86.1 82.5l60.4 37.7-30.2 18.9-60.4-37.7 30.2-18.9zm-107.2 67l60.4 37.7-30.2 18.9-60.4-37.7 30.2-18.9zM119.3 375.7l60.4 37.7-30.2 18.9L89.1 394.6l30.2-18.9z"/></svg>
-        <h2 class="title">Almost to holiday break!</h2>
-        <p class="countdown"></p>
+    <div class="container" class="snowflakes-container">
+
+      <p class="countdown-days"></p>
+      <p class="countdown-hours"></p>
+      <h2 class="title">Almost to holiday break!</h2>
 
     </div>
-    
-  <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
-  <script class="snow">
-    var sf = new Snowflakes({
-    color: "#e0edd4",
-    count: 63,
-    speed: 1.7,
-    minSize: 8,
-    maxSize: 34
-    });
-  </script>
+    <!-- Almost able to target container for snow, still needs debugging -->
+    <!-- <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+    <script>
+        var sf = new Snowflakes({
+            color: "#669c35",
+            count: 50,
+            minSize: 4,
+            maxSize: 50
+        });
+    </script> -->
 </body>
 <script type="text/javascript" src="main.js"></script>
 </html>

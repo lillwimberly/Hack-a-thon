@@ -7,23 +7,55 @@ body {
     width: auto;
 }
 
+p {
+  margin: 0 auto;
+  color: white;
+}
+
+.countdown-days {
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+  margin-top: 20px;
+  text-shadow: #f00 1px 0 10px;
+
+}
+
+.countdown-hours {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-shadow: #f00 1px 0 10px;
+}
+
 .container {
-  height: 350px;
-  width: 300px;
-  /* border: 1px black solid; */
+  height: 230px;
+  width: 410px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #a7c957;
+  background-image: url("image/136080.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #a7c957; */
 }
+
+/* // Paste the code inside the <body> tag
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script>
+    var sf = new Snowflakes({
+        color: "#669c35",
+        count: 100,
+        minSize: 4,
+        maxSize: 50
+    });
+</script> */
 
 .title {
   margin: 0;
-  font-size: 20px;
-  font-weight: 400;
-  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  /* padding-top: 10px; */
 }
 
 .countdown {
@@ -31,14 +63,4 @@ body {
   padding: 0;
   font-size: 40px;
   color: white;
-}
-
-svg {
-width: 40px;
-  fill: #bc4749;
-  margin: 8px;
-}
-
-.snow {
-  z-index: 2;
 }

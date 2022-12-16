@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
   function countdown (){
     const currentTime = new Date().getTime();
     const timeRemaining = new Date('December 23, 2022 20:00:00').getTime() - currentTime;
-
+    // helper getTime function
     function getTime() {
       return {
           days: Math.floor(timeRemaining / 1000 / 60 / 60 / 24),
@@ -14,22 +14,14 @@ document.addEventListener('DOMContentLoaded', (e) => {
           seconds: Math.floor(timeRemaining / 1000) % 60
       };
     }
-    // invoke getTime func and save the result
+    
     const time = getTime();
     // console.log(time)
-    const day = document.querySelector('.countdown');
-    day.innerText = `${time.days} days, ${time.hours} : ${time.minutes} : ${time.seconds}`;
-    // iterate over our time obj
-      // 
-
+    const day = document.querySelector('.countdown-days');
+    const hours = document.querySelector('.countdown-hours');
+    day.innerText = `${time.days} days`;
+    hours.innerHTML = `${time.hours} : ${time.minutes} : ${time.seconds}`;
+    
   }
   setInterval(countdown, 1000);
-
 })
-// invoke our func and grab the result
-// let numOfDays = countdown();
-// console.log(numOfDays)
-// // select the h1 tag and save it as var
-// const day = document.querySelector('.countdown');
-// // assign the result as innerText in countdown class
-// day.innerText = numOfDays;
