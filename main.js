@@ -1,17 +1,15 @@
-document.addEventListener('DOMContentLoaded', (e) => {
-    
-  
+document.addEventListener("DOMContentLoaded", (e) => {
   // countdown function
-  function countdown (){
+  function countdown() {
     const currentTime = new Date().getTime();
     const timeRemaining = new Date('December 23, 2022 20:00:00').getTime() - currentTime;
     // helper getTime function
     function getTime() {
       return {
-          days: Math.floor(timeRemaining / 1000 / 60 / 60 / 24),
-          hours: Math.floor(timeRemaining / 1000 / 60 / 60) % 24,
-          minutes: Math.floor(timeRemaining / 1000 / 60) % 60,
-          seconds: Math.floor(timeRemaining / 1000) % 60
+        days: Math.floor(timeRemaining / 1000 / 60 / 60 / 24),
+        hours: Math.floor(timeRemaining / 1000 / 60 / 60) % 24,
+        minutes: Math.floor(timeRemaining / 1000 / 60) % 60,
+        seconds: Math.floor(timeRemaining / 1000) % 60,
       };
     }
     
